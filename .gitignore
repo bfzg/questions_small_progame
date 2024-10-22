@@ -1,0 +1,42 @@
+# 忽略 HBuilderX 生成的项目文件夹
+/local
+/unpackage
+
+# 忽略 npm/node_modules
+node_modules/
+
+# 忽略 HBuilderX 编辑器的配置文件
+.project
+.settings/
+*.tmp
+*.log
+
+# 忽略 dist 编译目录（可以根据你的项目需要调整）
+/dist/
+/build/
+
+# 忽略 UniCloud 云函数的本地日志、临时文件
+cloudfunctions/**/node_modules/
+cloudfunctions/**/unpackage/
+cloudfunctions/**/.cloud
+cloudfunctions/**/package-lock.json
+cloudfunctions/**/dist/
+cloudfunctions/**/.DS_Store
+cloudfunctions/**/tmp/
+cloudfunctions/**/log/
+
+# 忽略 DCloud 云开发的本地临时文件
+cloudbase/
+unicloud/
+
+# 忽略 Android 和 iOS 构建文件（针对 App 项目）
+platforms/android/
+platforms/ios/
+*.keystore
+*.jks
+
+# 忽略 macOS 的系统文件
+.DS_Store
+
+# 忽略 Windows 的系统文件
+Thumbs.db
