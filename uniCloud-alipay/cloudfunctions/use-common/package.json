@@ -1,0 +1,18 @@
+{
+    "name": "use-common",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "hello-common": "file:..\/common\/hello-common"
+    },
+    "origin-plugin-dev-name": "uni-cloud",
+    "origin-plugin-version": "1.4.0",
+    "plugin-dev-name": "uni-cloud",
+    "plugin-version": "1.4.0"
+}

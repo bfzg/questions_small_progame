@@ -1,0 +1,19 @@
+{
+    "name": "redis-test",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "extensions": {
+        "uni-cloud-redis": {}
+    },
+    "origin-plugin-dev-name": "uni-cloud",
+    "origin-plugin-version": "1.4.0",
+    "plugin-dev-name": "uni-cloud",
+    "plugin-version": "1.4.0"
+}
