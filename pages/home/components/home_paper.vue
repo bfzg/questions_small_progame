@@ -38,7 +38,7 @@ function handleClick() {
 }
 </script>
 
-<style>
+<style scoped>
 .ellipsis {
 	white-space: nowrap; /* 禁止换行 */
 	overflow: hidden; /* 超出部分隐藏 */
