@@ -1,1 +1,1 @@
-<view class="content"><view class="text-3xl py-10">11122</view></view>
+<view class="content"><view class="flex flex-col px-3"><view class="py-4"><home-description u-i="cc2a3aae-0" bind:__l="__l"/></view><view class="mt-4 rounded-tr rounded-tl h-full"><home-paper-item tt:if="{{a}}" u-i="cc2a3aae-1" bind:__l="__l" u-p="{{a}}"/></view></view></view>

@@ -23,8 +23,10 @@ export default {
 };
 </script>
 
-<style>
-@import url('./static/tailwind.css');
+
+<style lang="scss">
+@import '@/uni_modules/uview-plus/index.scss';
+
 /*每个页面公共css */
 /* #ifndef APP-NVUE */
 view {
@@ -41,4 +43,6 @@ view {
 }
 
 /* #endif */
+
+
 </style>

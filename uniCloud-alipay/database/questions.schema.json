@@ -1,0 +1,32 @@
+// 文档教程: https://uniapp.dcloud.net.cn/uniCloud/schema
+{
+	"bsonType": "object",
+	"required": [],
+	"permission": {},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"paper_id": {
+			"bsonType": "string",
+			"description": "题目内容"
+		},
+		"options": {
+			"bsonType": "array",
+			"items": {
+				"bosnType": "string"
+			},
+			"minItems": 2,
+			"maxItems": 10,
+			"description": "选项数组"
+		},
+		"correct_answer": {
+			"bsonType": "string",
+			"description": "正确答案"
+		},
+		"created_at": {
+			"bsonType": "date",
+			"description": "创建时间"
+		}
+	}
+}

@@ -1,5 +1,8 @@
 {
   "navigationBarTitleText": "首页",
-  "enablePullDownRefresh": false,
-  "usingComponents": {}
+  "navigationStyle": "default",
+  "usingComponents": {
+    "home-description": "./components/home_description",
+    "home-paper-item": "./components/home_paper"
+  }
 }
