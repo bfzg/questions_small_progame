@@ -17,7 +17,6 @@ const _sfc_main = {
         pageSize: 20
       }
     }).then((res) => {
-      console.log(res);
       if (res.result) {
         const { items, total } = res.result;
         paperItems.value = items;
@@ -25,6 +24,11 @@ const _sfc_main = {
     }).catch((err) => {
       console.error("云函数调用失败:", err);
     });
+    function handleClick(pid) {
+      common_vendor.index.navigateTo({
+        url: `/pages/questions/view?pid=${pid}`
+      });
+    }
     return (_ctx, _cache) => {
       return {
         a: common_vendor.f(paperItems.value, (item, index, i0) => {
@@ -37,7 +41,8 @@ const _sfc_main = {
             }),
             c: index
           };
-        })
+        }),
+        b: common_vendor.o(handleClick)
       };
     };
   }

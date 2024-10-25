@@ -1,5 +1,5 @@
 <template>
-	<view class="p-2 rounded-lg bg-white border flex justify-between items-center" @click="handleClick">
+	<view @click="onClick" class="p-2 rounded-lg bg-white border flex justify-between items-center">
 		<!-- 左侧：标题和介绍 -->
 		<view class="flex-1 overflow-hidden">
 			<view class="text-xl pb-1">{{ title }}</view>
@@ -14,9 +14,10 @@
 </template>
 
 <script setup>
-
+import { ref, defineProps, defineEmits } from 'vue';
+const emit = defineEmits(['onClick']);
 const props = defineProps({
-	paperid: {
+	paperId: {
 		type: String,
 		required: true
 	},
@@ -30,12 +31,10 @@ const props = defineProps({
 	}
 });
 
-function handleClick() {
-	// 跳转到新的页面，并通过 query 参数传递 id
-	uni.navigateTo({
-		url: '/pages/questions/view?id=1'
-	});
-}
+const onClick = () => {
+	emit('onClick', props.paperId);
+};
+
 </script>
 
 <style scoped>

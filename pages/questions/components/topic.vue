@@ -8,15 +8,16 @@
 		<view class="mt-2">
 			<ul>
 				<view
-					v-for="(option, index) in options"
-					:key="index"
-					:class="['p-2 text-lg border bg-white my-3', { 'bg-blue-200': selectedIndex === index }]"
-					@click="handleOptionClick(index)"
+					v-for="(option, key) in Object.entries(options)"
+					:key="key"
+					:class="['p-2 text-lg border bg-white my-3', { 'bg-blue-200': selectedOption === key }]"
+					@click="handleOptionClick(key)"
 				>
-					{{ option }}
+					{{ key }}. {{ option }}
 				</view>
 			</ul>
 		</view>
+		<button class="mt-4 bg-primary text-white" @click="nextQuestion">下一题</button>
 	</view>
 </template>
 
@@ -29,7 +30,7 @@ const props = defineProps({
 		required: true
 	},
 	options: {
-		type: Array,
+		type: Object,
 		required: true
 	}
 });

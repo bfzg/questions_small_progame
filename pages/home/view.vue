@@ -6,7 +6,7 @@
 			</view>
 			<view class="mt-4 rounded-tr rounded-tl h-full">
 				<view v-for="(item, index) in paperItems" :key="index">
-					<HomePaperItem :paperId="item._id" :title="item.title" :description="item.description" />
+					<HomePaperItem @onClick="handleClick" :paperId="item._id" :title="item.title" :description="item.description" />
 				</view>
 			</view>
 		</view>
@@ -25,11 +25,10 @@ uniCloud
 		name: 'function-paper', // 云函数名称，与文件夹名一致
 		data: {
 			page: 1,
-			pageSize: 20
+			pageSize: 20,
 		}
 	})
 	.then((res) => {
-		console.log(res);
 		if (res.result) {
 			const { items, total } = res.result;
 			paperItems.value = items; // 更新 ref 数据
@@ -38,6 +37,13 @@ uniCloud
 	.catch((err) => {
 		console.error('云函数调用失败:', err);
 	});
+
+function handleClick(pid) {
+	// 跳转到新的页面，并通过 query 参数传递 id
+	uni.navigateTo({
+		url: `/pages/questions/view?pid=${pid}`
+	});
+}
 </script>
 
 <style></style>
