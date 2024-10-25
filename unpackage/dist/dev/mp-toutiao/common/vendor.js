@@ -10598,6 +10598,8 @@ let Gs = new class {
     return Ms(Gs);
   } }), xs(Gs), Gs.addInterceptor = N, Gs.removeInterceptor = D, Gs.interceptObject = F;
 })();
+var Ys = Gs;
+exports.Ys = Ys;
 exports._export_sfc = _export_sfc;
 exports.computed = computed;
 exports.createSSRApp = createSSRApp;

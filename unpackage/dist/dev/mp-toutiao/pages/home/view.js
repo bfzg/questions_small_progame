@@ -8,12 +8,35 @@ const HomePaperItem = () => "./components/home_paper.js";
 const _sfc_main = {
   __name: "view",
   setup(__props) {
+    const paperItems = common_vendor.ref([]);
+    common_vendor.Ys.callFunction({
+      name: "function-paper",
+      // 云函数名称，与文件夹名一致
+      data: {
+        page: 1,
+        pageSize: 20
+      }
+    }).then((res) => {
+      console.log(res);
+      if (res.result) {
+        const { items, total } = res.result;
+        paperItems.value = items;
+      }
+    }).catch((err) => {
+      console.error("云函数调用失败:", err);
+    });
     return (_ctx, _cache) => {
       return {
-        a: common_vendor.p({
-          paperId: "test-key",
-          title: "韦氏智力量表",
-          description: "韦克斯勒成人智力量表，简称韦氏成人智力量表或韦氏智力测验，是一个普遍用于全世界而广受重视的评估测验"
+        a: common_vendor.f(paperItems.value, (item, index, i0) => {
+          return {
+            a: "cc2a3aae-1-" + i0,
+            b: common_vendor.p({
+              paperId: item._id,
+              title: item.title,
+              description: item.description
+            }),
+            c: index
+          };
         })
       };
     };
