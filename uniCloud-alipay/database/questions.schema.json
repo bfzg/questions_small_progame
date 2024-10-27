@@ -1,39 +1,47 @@
 {
-    "bsonType": "object",
-    "required": [""],
-    "properties": {
-        "_id": {
-            "description": "ID，系统自动生成"
-        },
-        "paper_id": {
-            "bsonType": "string",
-            "description": "所属试卷ID"
-        },
-        "question": {
-            "bsonType": "string",
-            "description": "题目内容"
-        },
-        "options": {
-            "bsonType": "object",
-            "patternProperties": {
-                "^[A-Z]$": {
-                    "bsonType": "string",
-                    "description": "选项内容"
-                }
-            },
-            "description": "选项，键为选项标识符（如A、B、C等），值为选项内容"
-        },
-        "correct_answer": {
-            "bsonType": "string",
-            "description": "正确答案选项的键值（如A、B、C等）"
-        },
-        "created_at": {
-            "bsonType": "date",
-            "description": "创建时间"
-        },
-        "updated_at": {
-            "bsonType": "date",
-            "description": "更新时间"
-        }
-    }
+	"bsonType": "object",
+	"required": [""],
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"paper_id": {
+			"bsonType": "string",
+			"description": "所属试卷ID"
+		},
+		"question": {
+			"bsonType": "string",
+			"description": "题目内容"
+		},
+		"options": {
+			"bsonType": "array",
+			"items": {
+				"bsonType": "object",
+				"properties": {
+					"key": {
+						"bsonType": "string",
+						"description": "选项标识符（如A、B、C等）"
+					},
+					"value": {
+						"bsonType": "string",
+						"description": "选项内容"
+					}
+				},
+				"required": ["key", "value"]
+			},
+			"description": "选项列表，每个对象包含选项标识符和内容"
+		},
+		"correct_answer": {
+			"bsonType": "string",
+			"description": "正确答案选项的键值（如A、B、C等）"
+		},
+		"created_at": {
+			"bsonType": "date",
+			"description": "创建时间"
+		},
+		"updated_at": {
+			"bsonType": "date",
+			"description": "更新时间"
+		}
+	}
 }

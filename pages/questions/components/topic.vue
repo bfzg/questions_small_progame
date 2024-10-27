@@ -2,18 +2,18 @@
 	<view class="py-2">
 		<view>
 			<p class="text-lg font-semibold">
-				{{ question }}
+				{{ record.question }}
 			</p>
 		</view>
 		<view class="mt-2">
 			<ul>
 				<view
-					v-for="(option, key) in Object.entries(options)"
-					:key="key"
-					:class="['p-2 text-lg border bg-white my-3', { 'bg-blue-200': selectedOption === key }]"
-					@click="handleOptionClick(key)"
+					v-for="(item, index) in record.options"
+					:key="item.key"
+					:class="['p-2 text-lg border bg-white my-3', { 'bg-blue-200': selectedIndex === item.key }]"
+					@click="handleOptionClick(item.key,index)"
 				>
-					{{ key }}. {{ option }}
+					{{ item.key }}、{{ item.value }}
 				</view>
 			</ul>
 		</view>
@@ -22,25 +22,23 @@
 </template>
 
 <script setup>
-import { ref, defineProps, defineEmits } from 'vue';
+import { ref, defineProps, defineEmits, onMounted } from 'vue';
+import index from '../../../uni_modules/uview-plus';
 
 const props = defineProps({
-	question: {
-		type: String,
-		required: true
-	},
-	options: {
+	record: {
 		type: Object,
-		required: true
+		required: true,
+		default: () => ({})
 	}
 });
 
 const emit = defineEmits(['optionSelected']);
 const selectedIndex = ref(null);
 
-function handleOptionClick(index) {
-	selectedIndex.value = index;
-	emit('optionSelected', index);
+function handleOptionClick(value,index) {
+	selectedIndex.value = value;
+	emit('optionSelected', value,index);
 }
 </script>
 

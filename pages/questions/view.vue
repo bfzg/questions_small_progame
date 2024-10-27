@@ -3,9 +3,7 @@
 		<!-- 传递 totalQuestions 和 currentQuestion 给进度条组件 -->
 		<ProgressBar :totalQuestions="totalQuestions" :currentQuestion="currentQuestion" />
 		<view class="px-3 py-2">
-			<view v-for="(item, index) in questionItems" :key="index">
-				<Topic :question="item.question" :options="item.options" @optionSelected="handleOptionSelected" />
-			</view>
+			<Topic :record="questionItems[currentQuestion]" @optionSelected="handleOptionSelected" />
 		</view>
 	</view>
 </template>
@@ -18,7 +16,7 @@ import Topic from './components/topic.vue';
 
 // 题目总数和当前题目编号
 const totalQuestions = ref(10);
-const currentQuestion = ref(3);
+const currentQuestion = ref(1);
 
 const pid = ref('');
 const questionItems = ref([]);
@@ -45,13 +43,13 @@ function getDataList() {
 		.then((res) => {
 			const { items, total } = res.result;
 			totalQuestions.value = total;
-			questionItems.value = res.items;
+			questionItems.value = items;
 		});
 }
 
 // 点击选项时的回调函数
-function handleOptionSelected(index) {
-	console.log(`你选择了选项: ${optionsData[index]}`);
+function handleOptionSelected(value,index) {
+	console.log(questionItems.value[index]);
 }
 
 // 切换到下一题
