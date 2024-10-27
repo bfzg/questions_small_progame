@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/home/view",
-    "pages/questions/view"
+    "pages/questions/view",
+    "pages/score/view"
   ],
   "window": {
     "navigationBarTextStyle": "black",

@@ -8,22 +8,23 @@
 		<view class="mt-2">
 			<ul>
 				<view
-					v-for="(item, index) in record.options"
+					v-for="item in record.options"
 					:key="item.key"
-					:class="['p-2 text-lg border bg-white my-3', { 'bg-blue-200': selectedIndex === item.key }]"
-					@click="handleOptionClick(item.key,index)"
+					:class="['rounded-md p-2 text-lg border bg-white my-3', { 'bg-blue-200': currentOptions === item.key }]"
+					@click="handleOptionClick(item.key)"
 				>
 					{{ item.key }}、{{ item.value }}
 				</view>
 			</ul>
 		</view>
-		<button class="mt-4 bg-primary text-white" @click="nextQuestion">下一题</button>
+		<up-button :disabled="!currentOptions" class="mt-4" type="primary" @click="nextQuestion">下一题</up-button>
 	</view>
 </template>
 
 <script setup>
-import { ref, defineProps, defineEmits, onMounted } from 'vue';
+import { ref, defineProps, defineEmits, onMounted, reactive } from 'vue';
 import index from '../../../uni_modules/uview-plus';
+import { email } from '../../../uni_modules/uview-plus/libs/function/test';
 
 const props = defineProps({
 	record: {
@@ -33,12 +34,17 @@ const props = defineProps({
 	}
 });
 
-const emit = defineEmits(['optionSelected']);
-const selectedIndex = ref(null);
+const emit = defineEmits(['onClickSelected']);
 
-function handleOptionClick(value,index) {
-	selectedIndex.value = value;
-	emit('optionSelected', value,index);
+const currentOptions = ref('');
+
+function handleOptionClick(value) {
+	currentOptions.value = value;
+}
+
+function nextQuestion() {
+	emit('onClickSelected', currentOptions.value);
+	currentOptions.value = '';
 }
 </script>
 

@@ -5,6 +5,7 @@ const uni_modules_uviewPlus_index = require("./uni_modules/uview-plus/index.js")
 if (!Math) {
   "./pages/home/view.js";
   "./pages/questions/view.js";
+  "./pages/score/view.js";
 }
 const _sfc_main = {
   onLaunch: async function() {

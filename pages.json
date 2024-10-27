@@ -27,19 +27,13 @@
 			"navigationBarTitleText": "答题",
 			"navigationStyle": "default"
 		}
+	}, {
+		"path": "pages/score/view",
+		"style": {
+			"navigationBarTitleText": "得分",
+			"navigationStyle": "default"
+		}
 	}],
-	// "tabBar": {
-	// 	"color": "#7A7E83",
-	// 	"selectedColor": "#1296db",
-	// 	"borderStyle": "black",
-	// 	"backgroundColor": "#ffffff",
-	// 	"list": [{
-	// 		"pagePath": "pages/home/view",
-	// 		"iconPath": "static/tabbar/fn.png",
-	// 		"selectedIconPath": "static/tabbar/fn1.png",
-	// 		"text": "首页"
-	// 	}]
-	// },
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",

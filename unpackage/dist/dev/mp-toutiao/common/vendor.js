@@ -7840,6 +7840,13 @@ const pages = [
       navigationBarTitleText: "答题",
       navigationStyle: "default"
     }
+  },
+  {
+    path: "pages/score/view",
+    style: {
+      navigationBarTitleText: "得分",
+      navigationStyle: "default"
+    }
   }
 ];
 const globalStyle = {

@@ -3,7 +3,7 @@
 		<!-- 传递 totalQuestions 和 currentQuestion 给进度条组件 -->
 		<ProgressBar :totalQuestions="totalQuestions" :currentQuestion="currentQuestion" />
 		<view class="px-3 py-2">
-			<Topic :record="questionItems[currentQuestion]" @optionSelected="handleOptionSelected" />
+			<Topic :record="questionItems[currentQuestion]" @onClickSelected="onClickSelected" />
 		</view>
 	</view>
 </template>
@@ -16,14 +16,17 @@ import Topic from './components/topic.vue';
 
 // 题目总数和当前题目编号
 const totalQuestions = ref(10);
-const currentQuestion = ref(1);
+const currentQuestion = ref(0);
 
 const pid = ref('');
 const questionItems = ref([]);
+const userSelectQuestion = ref([]);
+const totalScore = ref(0);
+
+// 在页面加载时获取题目列表
 
 onLoad((options) => {
 	pid.value = options.pid || '';
-	console.log('传递的题目ID:', pid.value);
 	getDataList();
 });
 
@@ -48,15 +51,30 @@ function getDataList() {
 }
 
 // 点击选项时的回调函数
-function handleOptionSelected(value,index) {
-	console.log(questionItems.value[index]);
+function onClickSelected(value) {
+	userSelectQuestion.value.push({
+		id: questionItems.value[currentQuestion.value]._id,
+		index: currentQuestion.value,
+		answer: value,
+		correct_answer: questionItems.value[currentQuestion.value].correct_answer
+	});
+	console.log(value, currentQuestion.value);
+	if (value === questionItems.value[currentQuestion.value].correct_answer) {
+		console.log('答对了');
+		totalScore.value += 10;
+	}
+	if (currentQuestion.value < totalQuestions.value - 1) {
+		currentQuestion.value += 1;
+	} else {
+		jumpToScore();
+	}
 }
 
-// 切换到下一题
-function nextQuestion() {
-	if (currentQuestion.value < totalQuestions.value) {
-		currentQuestion.value += 1;
-	}
+function jumpToScore() {
+	// &userSelectQuestion=${JSON.stringify(userSelectQuestion.value)}
+	uni.navigateTo({
+		url: `/pages/score/view?totalScore=${String(totalScore.value)}`
+	});
 }
 </script>
 

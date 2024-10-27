@@ -1,7 +1,7 @@
 <template>
 	<view class="quiz-progress">
 		<!-- 显示进度条 -->
-		<up-line-progress :percentage="progress" height="8px" active color="#4CAF50"></up-line-progress>
+		<up-line-progress :showText="false" :percentage="progress" height="8px" active color="#4CAF50"></up-line-progress>
 
 		<!-- 显示题目编号 -->
 		<view class="progress-text">题目 {{ currentQuestion }} / {{ totalQuestions }}</view>
