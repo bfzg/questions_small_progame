@@ -5,6 +5,9 @@
 				{{ record.question }}
 			</p>
 		</view>
+		<view v-if="loading" class="mt-4 h-full flex justify-center items-center">
+			<text class="loading-text">加载中...</text>
+		</view>
 		<view class="mt-2">
 			<ul>
 				<view
@@ -31,6 +34,10 @@ const props = defineProps({
 		type: Object,
 		required: true,
 		default: () => ({})
+	},
+	loading: {
+		type: Boolean,
+		default: false
 	}
 });
 

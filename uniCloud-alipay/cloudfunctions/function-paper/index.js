@@ -1,6 +1,6 @@
 'use strict';
+const db = uniCloud.database();
 exports.main = async (event, context) => {
-	const db = uniCloud.database();
 	//event为客户端上传的参数
 	const {
 		page = 1, size = 10

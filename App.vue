@@ -1,5 +1,6 @@
 <script>
 import checkUpdate from '@/uni_modules/uni-upgrade-center-app/utils/check-update';
+import uniIdPageInit from '@/uni_modules/uni-id-pages/init.js';
 export default {
 	onLaunch: async function () {
 		console.log('App Launch');
@@ -23,7 +24,6 @@ export default {
 };
 </script>
 
-
 <style lang="scss">
 @import '@/uni_modules/uview-plus/index.scss';
 
@@ -43,6 +43,4 @@ view {
 }
 
 /* #endif */
-
-
 </style>

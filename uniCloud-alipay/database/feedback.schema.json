@@ -1,0 +1,41 @@
+{
+	"bsonType": "object",
+	"required": [
+		"user_id",
+		"content"
+	],
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"create_date": {
+			"bsonType": "timestamp",
+			"description": "留言时间/回复留言时间"
+		},
+		"content": {
+			"bsonType": "string",
+			"description": "留言内容/回复内容",
+			"trim": "right"
+		},
+		"contact": {
+			"bsonType": "string",
+			"description": "联系人",
+			"trim": "both"
+		},
+		"email":{
+			"bsonType": "string",
+			"description": "邮箱",
+			"trim": "both"
+		},
+		"mobile": {
+			"bsonType": "string",
+			"description": "联系电话",
+			"trim": "both"
+		},
+		"isConact": {
+			"bsonType": "bool",
+			"description": "是否公开联系方式"
+		}
+	},
+	"version": "0.0.1"
+}

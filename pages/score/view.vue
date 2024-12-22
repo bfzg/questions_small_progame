@@ -16,14 +16,6 @@
 				</view>
 			</view>
 		</view>
-		<!-- <view class="mt-3">
-			<view v-for="(item, index) in userSelectQuestion" :key="index">
-				<view class="flex items-center">
-					<view>题目 {{ item.index }}</view>
-					<view :class="item.answer === item.correct_answer ? 'text-success' : 'text-danger'">你的答案: {{ item.answer }}</view>
-				</view>
-			</view>
-		</view> -->
 
 		<view class="mt-4">
 			<button class="w-1-2 mt-4 bg-primary text-white" @click="jumpToHome">回到首页</button>
