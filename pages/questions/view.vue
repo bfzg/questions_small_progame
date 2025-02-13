@@ -40,7 +40,7 @@ function getDataList(retryCount = 3) {
 				action: 'list',
 				data: {
 					page: 1,
-					pageSize: 10,
+					pageSize: 100,
 					pid: pid.value
 				}
 			},
@@ -76,12 +76,14 @@ function onClickSelected(value) {
 		correct_answer: questionItems.value[currentQuestion.value].correct_answer
 	});
 	if (value === questionItems.value[currentQuestion.value].correct_answer) {
-		totalScore.value += 10;
+		const score = questionItems.value[currentQuestion.value].score;
+		totalScore.value += score;
 	}
 	if (currentQuestion.value < totalQuestions.value - 1) {
 		currentQuestion.value++;
 	} else {
 		jumpToScore();
+		totalScore.value += questionItems.value[currentQuestion.value].score;
 	}
 }
 

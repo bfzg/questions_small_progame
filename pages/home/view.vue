@@ -64,12 +64,14 @@ const getPaperList = async (retryCount = 3) => {
 	}
 };
 
+// 跳转页面
 function handleClick(pid) {
 	// 跳转到新的页面，并通过 query 参数传递 id
 	uni.navigateTo({
 		url: `/pages/questions/view?pid=${pid}`
 	});
 }
+
 </script>
 
 <style></style>

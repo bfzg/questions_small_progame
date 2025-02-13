@@ -13,6 +13,8 @@ exports.main = async (event, context) => {
 		switch (action) {
 			case 'add': // 新增题目
 				return await addTopic(data);
+			case 'addTopics': // 新增题目 通过 数组
+				return await addTopics(data);
 			case 'delete': // 删除题目
 				return await deleteTopic(_id);
 			case 'update': // 更新题目
@@ -42,6 +44,24 @@ async function addTopic(data) {
 		created_at: now,
 		updated_at: now
 	};
+	const res = await collection.add(topicData);
+	return {
+		code: 0,
+		message: '题目添加成功',
+		data: res.id
+	};
+}
+
+// 增加题目 通过 数组
+async function addTopics(data) {
+	const now = new Date();
+	const topicData = data.map(item => {
+		return {
+			...item,
+			created_at: now,
+			updated_at: now
+		};
+	});
 	const res = await collection.add(topicData);
 	return {
 		code: 0,

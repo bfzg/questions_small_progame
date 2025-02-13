@@ -1,8 +1,0 @@
-{
-  "navigationBarTitleText": "首页",
-  "navigationStyle": "default",
-  "usingComponents": {
-    "home-description": "./components/home_description",
-    "home-paper-item": "./components/home_paper"
-  }
-}

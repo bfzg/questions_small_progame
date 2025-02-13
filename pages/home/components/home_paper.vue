@@ -1,5 +1,5 @@
 <template>
-	<view @click="onClick" class="my-3 p-2 rounded-lg bg-white border flex justify-between items-center">
+	<view @click="onClick" class="my-3 p-2 rounded-lg bg-white  flex justify-between items-center">
 		<!-- 左侧：标题和介绍 -->
 		<view class="flex-1 overflow-hidden">
 			<view class="text-xl pb-1">{{ title }}</view>

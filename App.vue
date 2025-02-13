@@ -1,13 +1,13 @@
 <script>
-import checkUpdate from '@/uni_modules/uni-upgrade-center-app/utils/check-update';
 import uniIdPageInit from '@/uni_modules/uni-id-pages/init.js';
+
 export default {
 	onLaunch: async function () {
 		console.log('App Launch');
 		// #ifdef MP-WEIXIN
 		uniCloud.initSecureNetworkByWeixin();
 		// #endif
-		checkUpdate(); //更新升级
+		await uniIdPageInit()
 	},
 	mounted() {
 		// #ifdef H5

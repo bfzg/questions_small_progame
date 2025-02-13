@@ -1,1 +1,0 @@
-<view class="content"><view class="flex flex-col px-3"><view class="py-4"><home-description u-i="cc2a3aae-0" bind:__l="__l"/></view><view class="mt-4 rounded-tr rounded-tl h-full"><view tt:for="{{a}}" tt:for-item="item" tt:key="c"><home-paper-item tt:if="{{item.b}}" bindonClick="{{b}}" u-i="{{item.a}}" bind:__l="__l" u-p="{{item.b}}"/></view></view></view></view>
