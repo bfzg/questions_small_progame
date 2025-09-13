@@ -25,7 +25,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '@/uni_modules/uview-plus/index.scss';
+@import url('./static/tailwind.css');
 
 /*每个页面公共css */
 /* #ifndef APP-NVUE */

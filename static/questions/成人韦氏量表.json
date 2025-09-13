@@ -1,0 +1,243 @@
+[
+    {
+      "paper_id": "68c584c4c221b8535c4daf43",
+      "question": "“水之于渴，就如食物之于___。”空格里应填什么？",
+      "options": [
+        { "key": "A", "value": "饱" },
+        { "key": "B", "value": "饿" },
+        { "key": "C", "value": "困" },
+        { "key": "D", "value": "渴" }
+      ],
+      "score": 5,
+      "correct_answer": "B"
+    },
+    {
+      "paper_id": "68c584c4c221b8535c4daf43",
+      "question": "一个正方形的边长为 6，它的面积是多少？",
+      "options": [
+        { "key": "A", "value": "12" },
+        { "key": "B", "value": "24" },
+        { "key": "C", "value": "36" },
+        { "key": "D", "value": "18" }
+      ],
+      "score": 5,
+      "correct_answer": "C"
+    },
+    {
+      "paper_id": "68c584c4c221b8535c4daf43",
+      "question": "“早起的鸟儿有虫吃”这句话主要强调的是什么？",
+      "options": [
+        { "key": "A", "value": "勤奋" },
+        { "key": "B", "value": "懒惰" },
+        { "key": "C", "value": "幸运" },
+        { "key": "D", "value": "时间" }
+      ],
+      "score": 5,
+      "correct_answer": "A"
+    },
+    {
+      "paper_id": "68c584c4c221b8535c4daf43",
+      "question": "下列哪一项是质数？",
+      "options": [
+        { "key": "A", "value": "21" },
+        { "key": "B", "value": "19" },
+        { "key": "C", "value": "25" },
+        { "key": "D", "value": "27" }
+      ],
+      "score": 5,
+      "correct_answer": "B"
+    },
+    {
+      "paper_id": "68c584c4c221b8535c4daf43",
+      "question": "如果所有 A 都是 B，所有 B 都是 C，那么以下哪项正确？",
+      "options": [
+        { "key": "A", "value": "所有 A 都是 C" },
+        { "key": "B", "value": "所有 C 都是 A" },
+        { "key": "C", "value": "所有 C 都是 B" },
+        { "key": "D", "value": "A 和 C 无关" }
+      ],
+      "score": 5,
+      "correct_answer": "A"
+    },
+    {
+      "paper_id": "68c584c4c221b8535c4daf43",
+      "question": "“耳朵”之于“听”，就如“眼睛”之于___。",
+      "options": [
+        { "key": "A", "value": "说" },
+        { "key": "B", "value": "走" },
+        { "key": "C", "value": "看" },
+        { "key": "D", "value": "写" }
+      ],
+      "score": 5,
+      "correct_answer": "C"
+    },
+    {
+      "paper_id": "68c584c4c221b8535c4daf43",
+      "question": "一个商品打八折后售价为 80 元，它的原价是多少？",
+      "options": [
+        { "key": "A", "value": "100" },
+        { "key": "B", "value": "120" },
+        { "key": "C", "value": "90" },
+        { "key": "D", "value": "150" }
+      ],
+      "score": 5,
+      "correct_answer": "A"
+    },
+    {
+      "paper_id": "68c584c4c221b8535c4daf43",
+      "question": "下列哪一项不是哺乳动物？",
+      "options": [
+        { "key": "A", "value": "鲸鱼" },
+        { "key": "B", "value": "蝙蝠" },
+        { "key": "C", "value": "企鹅" },
+        { "key": "D", "value": "人类" }
+      ],
+      "score": 5,
+      "correct_answer": "C"
+    },
+    {
+      "paper_id": "68c584c4c221b8535c4daf43",
+      "question": "5, 10, 20, 40, (   )，括号里应填什么？",
+      "options": [
+        { "key": "A", "value": "50" },
+        { "key": "B", "value": "60" },
+        { "key": "C", "value": "70" },
+        { "key": "D", "value": "80" }
+      ],
+      "score": 5,
+      "correct_answer": "D"
+    },
+    {
+      "paper_id": "68c584c4c221b8535c4daf43",
+      "question": "成语“画蛇添足”的意思是什么？",
+      "options": [
+        { "key": "A", "value": "做事过分反而坏事" },
+        { "key": "B", "value": "锦上添花" },
+        { "key": "C", "value": "毫无意义" },
+        { "key": "D", "value": "增加乐趣" }
+      ],
+      "score": 5,
+      "correct_answer": "A"
+    },
+    {
+      "paper_id": "68c584c4c221b8535c4daf43",
+      "question": "一个三角形三边分别为 3、4、5，这个三角形是什么类型？",
+      "options": [
+        { "key": "A", "value": "等腰三角形" },
+        { "key": "B", "value": "直角三角形" },
+        { "key": "C", "value": "等边三角形" },
+        { "key": "D", "value": "钝角三角形" }
+      ],
+      "score": 5,
+      "correct_answer": "B"
+    },
+    {
+      "paper_id": "68c584c4c221b8535c4daf43",
+      "question": "“太阳系中最大的行星是哪一个？”",
+      "options": [
+        { "key": "A", "value": "地球" },
+        { "key": "B", "value": "火星" },
+        { "key": "C", "value": "木星" },
+        { "key": "D", "value": "土星" }
+      ],
+      "score": 5,
+      "correct_answer": "C"
+    },
+    {
+      "paper_id": "68c584c4c221b8535c4daf43",
+      "question": "以下哪一个与其他三个不同类？",
+      "options": [
+        { "key": "A", "value": "钢笔" },
+        { "key": "B", "value": "铅笔" },
+        { "key": "C", "value": "毛笔" },
+        { "key": "D", "value": "纸张" }
+      ],
+      "score": 5,
+      "correct_answer": "D"
+    },
+    {
+      "paper_id": "68c584c4c221b8535c4daf43",
+      "question": "“如果所有律师都会辩论，而张三是律师，那么以下哪项正确？”",
+      "options": [
+        { "key": "A", "value": "张三不会辩论" },
+        { "key": "B", "value": "张三一定会辩论" },
+        { "key": "C", "value": "张三可能不是律师" },
+        { "key": "D", "value": "无法判断" }
+      ],
+      "score": 5,
+      "correct_answer": "B"
+    },
+    {
+      "paper_id": "68c584c4c221b8535c4daf43",
+      "question": "“历史上第一位登上月球的人是谁？”",
+      "options": [
+        { "key": "A", "value": "阿姆斯特朗" },
+        { "key": "B", "value": "哥伦布" },
+        { "key": "C", "value": "牛顿" },
+        { "key": "D", "value": "爱因斯坦" }
+      ],
+      "score": 5,
+      "correct_answer": "A"
+    },
+    {
+      "paper_id": "68c584c4c221b8535c4daf43",
+      "question": "下列哪一项属于抽象名词？",
+      "options": [
+        { "key": "A", "value": "幸福" },
+        { "key": "B", "value": "桌子" },
+        { "key": "C", "value": "苹果" },
+        { "key": "D", "value": "房子" }
+      ],
+      "score": 5,
+      "correct_answer": "A"
+    },
+    {
+      "paper_id": "68c584c4c221b8535c4daf43",
+      "question": "一个人从 1 数到 100，会念多少次数字 '9'？",
+      "options": [
+        { "key": "A", "value": "10" },
+        { "key": "B", "value": "19" },
+        { "key": "C", "value": "20" },
+        { "key": "D", "value": "21" }
+      ],
+      "score": 5,
+      "correct_answer": "C"
+    },
+    {
+      "paper_id": "68c584c4c221b8535c4daf43",
+      "question": "“牛顿提出的三大运动定律属于哪个学科范畴？”",
+      "options": [
+        { "key": "A", "value": "化学" },
+        { "key": "B", "value": "生物学" },
+        { "key": "C", "value": "物理学" },
+        { "key": "D", "value": "天文学" }
+      ],
+      "score": 5,
+      "correct_answer": "C"
+    },
+    {
+      "paper_id": "68c584c4c221b8535c4daf43",
+      "question": "“下列哪个词与‘愉快’意义最接近？”",
+      "options": [
+        { "key": "A", "value": "悲伤" },
+        { "key": "B", "value": "高兴" },
+        { "key": "C", "value": "痛苦" },
+        { "key": "D", "value": "冷漠" }
+      ],
+      "score": 5,
+      "correct_answer": "B"
+    },
+    {
+      "paper_id": "68c584c4c221b8535c4daf43",
+      "question": "“一打鸡蛋有多少个？”",
+      "options": [
+        { "key": "A", "value": "10" },
+        { "key": "B", "value": "11" },
+        { "key": "C", "value": "12" },
+        { "key": "D", "value": "13" }
+      ],
+      "score": 5,
+      "correct_answer": "C"
+    }
+  ]
+  

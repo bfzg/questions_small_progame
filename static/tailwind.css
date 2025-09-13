@@ -1,0 +1,232 @@
+/* @tailwind base; */
+
+.container {
+  width: 100%
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px
+  }
+}
+
+.collapse {
+  visibility: collapse !important
+}
+
+.absolute {
+  position: absolute !important
+}
+
+.relative {
+  position: relative !important
+}
+
+.my-3 {
+  margin-top: 0.75rem !important;
+  margin-bottom: 0.75rem !important
+}
+
+.mt-2 {
+  margin-top: 0.5rem !important
+}
+
+.mt-4 {
+  margin-top: 1rem !important
+}
+
+.block {
+  display: block !important
+}
+
+.flex {
+  display: flex !important
+}
+
+.table {
+  display: table !important
+}
+
+.table-cell {
+  display: table-cell !important
+}
+
+.table-row {
+  display: table-row !important
+}
+
+.hidden {
+  display: none !important
+}
+
+.h-full {
+  height: 100% !important
+}
+
+.w-full {
+  width: 100% !important
+}
+
+.flex-1 {
+  flex: 1 1 0% !important
+}
+
+.border-collapse {
+  border-collapse: collapse !important
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important
+}
+
+.flex-col {
+  flex-direction: column !important
+}
+
+.items-center {
+  align-items: center !important
+}
+
+.justify-center {
+  justify-content: center !important
+}
+
+.justify-between {
+  justify-content: space-between !important
+}
+
+.overflow-hidden {
+  overflow: hidden !important
+}
+
+.rounded-lg {
+  border-radius: 0.5rem !important
+}
+
+.rounded-md {
+  border-radius: 0.375rem !important
+}
+
+.rounded-tl {
+  border-top-left-radius: 0.25rem !important
+}
+
+.rounded-tr {
+  border-top-right-radius: 0.25rem !important
+}
+
+.border {
+  border-width: 1px !important
+}
+
+.bg-blue-200 {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(191 219 254 / var(--tw-bg-opacity, 1)) !important
+}
+
+.bg-white {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1)) !important
+}
+
+.p-2 {
+  padding: 0.5rem !important
+}
+
+.px-3 {
+  padding-left: 0.75rem !important;
+  padding-right: 0.75rem !important
+}
+
+.py-2 {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important
+}
+
+.py-4 {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important
+}
+
+.pb-1 {
+  padding-bottom: 0.25rem !important
+}
+
+.pl-2 {
+  padding-left: 0.5rem !important
+}
+
+.text-center {
+  text-align: center !important
+}
+
+.text-3xl {
+  font-size: 1.875rem !important;
+  line-height: 2.25rem !important
+}
+
+.text-lg {
+  font-size: 1.125rem !important;
+  line-height: 1.75rem !important
+}
+
+.text-sm {
+  font-size: 0.875rem !important;
+  line-height: 1.25rem !important
+}
+
+.text-xl {
+  font-size: 1.25rem !important;
+  line-height: 1.75rem !important
+}
+
+.text-xs {
+  font-size: 0.75rem !important;
+  line-height: 1rem !important
+}
+
+.font-semibold {
+  font-weight: 600 !important
+}
+
+.text-white {
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1)) !important
+}
+
+.underline {
+  text-decoration-line: underline !important
+}
+
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter !important;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter !important;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter !important;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+  transition-duration: 150ms !important
+}
+

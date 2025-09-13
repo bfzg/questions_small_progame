@@ -4,7 +4,7 @@
 
 # 忽略 npm/node_modules
 node_modules/
-
+uni_modules/
 # 忽略 HBuilderX 编辑器的配置文件
 .project
 .settings/

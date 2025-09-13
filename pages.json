@@ -1,43 +1,38 @@
 {
-	"easycom": {
-		"autoscan": true,
-		// 注意一定要放在custom里，否则无效，https://ask.dcloud.net.cn/question/131175
-		"custom": {
-			"^u--(.*)": "@/uni_modules/uview-plus/components/u-$1/u-$1.vue",
-			"^up-(.*)": "@/uni_modules/uview-plus/components/u-$1/u-$1.vue",
-			"^u-([^-].*)": "@/uni_modules/uview-plus/components/u-$1/u-$1.vue"
-		}
-	},
-	"compilerVersion": 3,
-	"uniStatistics": {
-		"enable": true
-	},
-	"style": {
-		"postcss": true
-	},
-	"pages": [{
-		"path": "pages/home/view",
-		"style": {
-			"navigationBarTitleText": "首页",
-			"navigationStyle": "default"
-		}
-	}, {
-		"path": "pages/questions/view",
-		"style": {
-			"navigationBarTitleText": "答题",
-			"navigationStyle": "default"
-		}
-	}, {
-		"path": "pages/score/view",
-		"style": {
-			"navigationBarTitleText": "得分",
-			"navigationStyle": "default"
-		}
-	}],
-	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
-	}
+  "compilerVersion": 3,
+  "uniStatistics": {
+    "enable": true
+  },
+  "style": {
+    "postcss": true
+  },
+  "pages": [
+    {
+      "path": "pages/home/view",
+      "style": {
+        "navigationBarTitleText": "首页",
+        "navigationStyle": "default"
+      }
+    },
+    {
+      "path": "pages/questions/view",
+      "style": {
+        "navigationBarTitleText": "答题",
+        "navigationStyle": "default"
+      }
+    },
+    {
+      "path": "pages/score/view",
+      "style": {
+        "navigationBarTitleText": "得分",
+        "navigationStyle": "default"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  }
 }

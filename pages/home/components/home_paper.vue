@@ -7,8 +7,8 @@
 		</view>
 
 		<!-- 右侧：图标按钮 -->
-		<view class="pl-2">
-			<up-icon name="arrow-right"></up-icon>
+		<view class="pl-2 text-lg">
+			&gt;
 		</view>
 	</view>
 </template>

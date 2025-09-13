@@ -1,1 +1,74 @@
-{"bsonType":"object","required":["title"],"properties":{"_id":{"description":"存储文档 ID（用户 ID），系统自动生成"},"title":{"bsonType":"string","title":"标题","description":"标题","label":"标题","trim":"both"},"description":{"bsonType":"string","title":"描述","description":"描述","trim":"both"},"total_questions":{"bsonType":"int","title":"问题总数","description":"问题总数","permission":{"write":false}},"view_count":{"bsonType":"int","title":"使用量","description":"使用量","permission":{"write":false}},"is_sticky":{"bsonType":"bool","title":"是否置顶","description":"是否置顶","permission":{"write":false}},"avatar":{"bsonType":"string","title":"封面大图","description":"缩略图地址","label":"封面大图","trim":"both"},"publish_date":{"bsonType":"timestamp","title":"发表时间","description":"发表时间","defaultValue":{"$env":"now"}},"publish_ip":{"bsonType":"string","title":"发布文章时IP地址","description":"发表时 IP 地址","forceDefaultValue":{"$env":"clientIP"}},"last_modify_date":{"bsonType":"timestamp","title":"最后修改时间","description":"最后修改时间","defaultValue":{"$env":"now"}},"last_modify_ip":{"bsonType":"string","description":"最后修改时 IP 地址","forceDefaultValue":{"$env":"clientIP"}},"language":{"bsonType":"string","description":"区分文章语言，前端过来根据可以根据这个"}},"version":"0.0.1"}
+{
+	"bsonType": "object",
+	"required": ["title"],
+	"properties": {
+		"_id": {
+			"description": "存储文档 ID（用户 ID），系统自动生成"
+		},
+		"title": {
+			"bsonType": "string",
+			"title": "标题",
+			"description": "标题",
+			"label": "标题",
+			"trim": "both"
+		},
+		"description": {
+			"bsonType": "string",
+			"title": "描述",
+			"description": "描述",
+			"trim": "both"
+		},
+		"total_questions": {
+			"bsonType": "int",
+			"title": "问题总数",
+			"description": "问题总数",
+			"permission": {
+				"write": false
+			}
+		},
+		"view_count": {
+			"bsonType": "int",
+			"title": "使用量",
+			"description": "使用量",
+			"permission": {
+				"write": false
+			}
+		},
+		"is_sticky": {
+			"bsonType": "bool",
+			"title": "是否置顶",
+			"description": "是否置顶",
+			"permission": {
+				"write": false
+			}
+		},
+		"avatar": {
+			"bsonType": "string",
+			"title": "封面大图",
+			"description": "缩略图地址",
+			"label": "封面大图",
+			"trim": "both"
+		},
+		"publish_date": {
+			"bsonType": "timestamp",
+			"title": "发表时间",
+			"description": "发表时间",
+			"defaultValue": {
+				"$env": "now"
+			}
+		},
+		"last_modify_date": {
+			"bsonType": "timestamp",
+			"title": "最后修改时间",
+			"description": "最后修改时间",
+			"defaultValue": {
+				"$env": "now"
+			}
+		},
+		"language": {
+			"bsonType": "string",
+			"description": "区分文章语言，前端过来根据可以根据这个"
+		}
+	},
+	"version": "0.0.1"
+}
