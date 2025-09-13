@@ -1,13 +1,9 @@
 <script>
-import uniIdPageInit from '@/uni_modules/uni-id-pages/init.js';
-
 export default {
 	onLaunch: async function () {
-		console.log('App Launch');
 		// #ifdef MP-WEIXIN
 		uniCloud.initSecureNetworkByWeixin();
 		// #endif
-		await uniIdPageInit()
 	},
 	mounted() {
 		// #ifdef H5
@@ -20,7 +16,7 @@ export default {
 	},
 	onHide: function () {
 		console.log('App Hide');
-	}
+	},
 };
 </script>
 
