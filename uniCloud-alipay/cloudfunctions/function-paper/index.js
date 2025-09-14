@@ -1,31 +1,31 @@
 'use strict';
 const db = uniCloud.database();
+
 exports.main = async (event, context) => {
-	//event为客户端上传的参数
-	const {
-		page = 1, size = 10
-	} = event;
+	console.log('>>event', event);
+	const page = Number(event.page) || 1;
+	const size = Number(event.size) || 10;
+
 	try {
-		// 获取总文档数
+		// 获取总数
 		const totalResult = await db.collection('paper').count();
 		const total = totalResult.total;
 
-		// 根据分页参数查询数据
+		// 分页查数据
 		const itemsResult = await db.collection('paper')
-			.skip((page - 1) * size) // 跳过前 (page-1)*size 条记录
-			.limit(size) // 限制返回 size 条记录
+			.skip((page - 1) * size)
+			.limit(size)
 			.get();
 
-		const items = itemsResult.data; // 获取查询到的文档数据
-
-		// 返回数据格式 {items:[], total:10}
 		return {
-			items,
+			items: itemsResult.data || [],
 			total
 		};
 	} catch (error) {
 		console.error('查询失败：', error);
 		return {
+			items: [],
+			total: 0,
 			error: error.message
 		};
 	}

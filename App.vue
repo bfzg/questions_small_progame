@@ -1,15 +1,6 @@
 <script>
 export default {
 	onLaunch: async function () {
-		// #ifdef MP-WEIXIN
-		uniCloud.initSecureNetworkByWeixin();
-		// #endif
-	},
-	mounted() {
-		// #ifdef H5
-		//const VConsole = require('@/common/js/vconsole.min.js')
-		//new VConsole()
-		// #endif
 	},
 	onShow: function () {
 		console.log('App Show');

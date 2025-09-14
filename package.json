@@ -83,10 +83,6 @@
 		"tailwindcss": "^3.4.17"
 	},
 	"dependencies": {
-		"axios": "^1.7.7",
-		"clipboard": "^2.0.11",
-		"dayjs": "^1.11.13",
-		"uview-ui": "^2.0.38",
-		"vant-weapp": "^0.5.29"
+		"dayjs": "^1.11.13"
 	}
 }
