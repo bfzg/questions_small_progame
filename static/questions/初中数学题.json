@@ -1,0 +1,242 @@
+[
+  {
+    "paper_id": "68c932498e05d399f3a602c0",
+    "question": "解方程：2x + 5 = 11",
+    "options": [
+      { "key": "A", "value": "x=2" },
+      { "key": "B", "value": "x=3" },
+      { "key": "C", "value": "x=6" },
+      { "key": "D", "value": "x=5" }
+    ],
+    "score": 5,
+    "correct_answer": "A"
+  },
+  {
+    "paper_id": "68c932498e05d399f3a602c0",
+    "question": "下列函数中，y = 2x + 1 的图像是一条？",
+    "options": [
+      { "key": "A", "value": "直线" },
+      { "key": "B", "value": "抛物线" },
+      { "key": "C", "value": "圆" },
+      { "key": "D", "value": "双曲线" }
+    ],
+    "score": 5,
+    "correct_answer": "A"
+  },
+  {
+    "paper_id": "68c932498e05d399f3a602c0",
+    "question": "若二次函数 y = x² - 4x + 3 的顶点是？",
+    "options": [
+      { "key": "A", "value": "(2, -1)" },
+      { "key": "B", "value": "(2, -2)" },
+      { "key": "C", "value": "(1, 2)" },
+      { "key": "D", "value": "(3, 1)" }
+    ],
+    "score": 5,
+    "correct_answer": "A"
+  },
+  {
+    "paper_id": "68c932498e05d399f3a602c0",
+    "question": "解不等式：x - 3 > 2",
+    "options": [
+      { "key": "A", "value": "x > 2" },
+      { "key": "B", "value": "x > 5" },
+      { "key": "C", "value": "x < 5" },
+      { "key": "D", "value": "x < 2" }
+    ],
+    "score": 5,
+    "correct_answer": "B"
+  },
+  {
+    "paper_id": "68c932498e05d399f3a602c0",
+    "question": "函数 y = x² 的图像开口方向是？",
+    "options": [
+      { "key": "A", "value": "向左" },
+      { "key": "B", "value": "向右" },
+      { "key": "C", "value": "向上" },
+      { "key": "D", "value": "向下" }
+    ],
+    "score": 5,
+    "correct_answer": "C"
+  },
+  {
+    "paper_id": "68c932498e05d399f3a602c0",
+    "question": "三角形内角和为多少度？",
+    "options": [
+      { "key": "A", "value": "90°" },
+      { "key": "B", "value": "180°" },
+      { "key": "C", "value": "270°" },
+      { "key": "D", "value": "360°" }
+    ],
+    "score": 5,
+    "correct_answer": "B"
+  },
+  {
+    "paper_id": "68c932498e05d399f3a602c0",
+    "question": "若a∥b，则对应角相等，这属于哪条几何定理？",
+    "options": [
+      { "key": "A", "value": "平行线性质" },
+      { "key": "B", "value": "三角形全等" },
+      { "key": "C", "value": "勾股定理" },
+      { "key": "D", "value": "相似三角形" }
+    ],
+    "score": 5,
+    "correct_answer": "A"
+  },
+  {
+    "paper_id": "68c932498e05d399f3a602c0",
+    "question": "直角三角形两条直角边长为3和4，则斜边长为？",
+    "options": [
+      { "key": "A", "value": "5" },
+      { "key": "B", "value": "6" },
+      { "key": "C", "value": "7" },
+      { "key": "D", "value": "8" }
+    ],
+    "score": 5,
+    "correct_answer": "A"
+  },
+  {
+    "paper_id": "68c932498e05d399f3a602c0",
+    "question": "圆周率π的近似值为？",
+    "options": [
+      { "key": "A", "value": "2.14" },
+      { "key": "B", "value": "3.14" },
+      { "key": "C", "value": "4.13" },
+      { "key": "D", "value": "3.41" }
+    ],
+    "score": 5,
+    "correct_answer": "B"
+  },
+  {
+    "paper_id": "68c932498e05d399f3a602c0",
+    "question": "若x² = 49，则x等于？",
+    "options": [
+      { "key": "A", "value": "7" },
+      { "key": "B", "value": "-7" },
+      { "key": "C", "value": "±7" },
+      { "key": "D", "value": "0" }
+    ],
+    "score": 5,
+    "correct_answer": "C"
+  },
+  {
+    "paper_id": "68c932498e05d399f3a602c0",
+    "question": "解方程：x² - 9 = 0",
+    "options": [
+      { "key": "A", "value": "x=3" },
+      { "key": "B", "value": "x=-3" },
+      { "key": "C", "value": "x=±3" },
+      { "key": "D", "value": "x=9" }
+    ],
+    "score": 5,
+    "correct_answer": "C"
+  },
+  {
+    "paper_id": "68c932498e05d399f3a602c0",
+    "question": "下列方程哪个是一元二次方程？",
+    "options": [
+      { "key": "A", "value": "2x + 3 = 0" },
+      { "key": "B", "value": "x² + 2x - 3 = 0" },
+      { "key": "C", "value": "xy = 5" },
+      { "key": "D", "value": "x³ - 1 = 0" }
+    ],
+    "score": 5,
+    "correct_answer": "B"
+  },
+  {
+    "paper_id": "68c932498e05d399f3a602c0",
+    "question": "若一次函数 y = kx + b 经过原点，则b等于？",
+    "options": [
+      { "key": "A", "value": "k" },
+      { "key": "B", "value": "0" },
+      { "key": "C", "value": "1" },
+      { "key": "D", "value": "-1" }
+    ],
+    "score": 5,
+    "correct_answer": "B"
+  },
+  {
+    "paper_id": "68c932498e05d399f3a602c0",
+    "question": "若|x| = 5，则x等于？",
+    "options": [
+      { "key": "A", "value": "5" },
+      { "key": "B", "value": "-5" },
+      { "key": "C", "value": "±5" },
+      { "key": "D", "value": "0" }
+    ],
+    "score": 5,
+    "correct_answer": "C"
+  },
+  {
+    "paper_id": "68c932498e05d399f3a602c0",
+    "question": "若一个角为30°，它的余角是多少度？",
+    "options": [
+      { "key": "A", "value": "30°" },
+      { "key": "B", "value": "60°" },
+      { "key": "C", "value": "120°" },
+      { "key": "D", "value": "150°" }
+    ],
+    "score": 5,
+    "correct_answer": "B"
+  },
+  {
+    "paper_id": "68c932498e05d399f3a602c0",
+    "question": "若一个角为45°，它的补角是多少度？",
+    "options": [
+      { "key": "A", "value": "135°" },
+      { "key": "B", "value": "90°" },
+      { "key": "C", "value": "45°" },
+      { "key": "D", "value": "60°" }
+    ],
+    "score": 5,
+    "correct_answer": "A"
+  },
+  {
+    "paper_id": "68c932498e05d399f3a602c0",
+    "question": "等腰三角形的两腰相等，则它的两个底角？",
+    "options": [
+      { "key": "A", "value": "相等" },
+      { "key": "B", "value": "不相等" },
+      { "key": "C", "value": "互余" },
+      { "key": "D", "value": "互补" }
+    ],
+    "score": 5,
+    "correct_answer": "A"
+  },
+  {
+    "paper_id": "68c932498e05d399f3a602c0",
+    "question": "下列数中是无理数的是？",
+    "options": [
+      { "key": "A", "value": "3" },
+      { "key": "B", "value": "5/2" },
+      { "key": "C", "value": "√2" },
+      { "key": "D", "value": "0.25" }
+    ],
+    "score": 5,
+    "correct_answer": "C"
+  },
+  {
+    "paper_id": "68c932498e05d399f3a602c0",
+    "question": "如果一次函数的图像经过点(1,2)，则代入函数公式应满足？",
+    "options": [
+      { "key": "A", "value": "y=2x" },
+      { "key": "B", "value": "y=x+1" },
+      { "key": "C", "value": "y=2x+1" },
+      { "key": "D", "value": "y=x-1" }
+    ],
+    "score": 5,
+    "correct_answer": "B"
+  },
+  {
+    "paper_id": "68c932498e05d399f3a602c0",
+    "question": "若点(0,3)在函数 y = kx + b 的图像上，则b=？",
+    "options": [
+      { "key": "A", "value": "0" },
+      { "key": "B", "value": "3" },
+      { "key": "C", "value": "k" },
+      { "key": "D", "value": "-3" }
+    ],
+    "score": 5,
+    "correct_answer": "B"
+  }
+]
