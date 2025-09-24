@@ -1,23 +1,16 @@
 'use strict';
 const {
-	addTopic,
 	addTopics
 } = require('./add.js');
 const {
-	deleteByPaperId,
-	deleteTopic
-} = require('./delete.js');
-const {
-	updateTopic
-} = require('./update.js');
-const {
-	getTopic,
 	listTopics
 } = require('./get.js');
+const {
+	deleteAll
+} = require('./delete.js')
+
 
 exports.main = async (event, context) => {
-	console.log('>> raw event:', event);
-
 	// 解析 HTTP 请求 body（POST 请求）或 query（GET 请求）
 	let body = {};
 	try {
@@ -34,25 +27,17 @@ exports.main = async (event, context) => {
 	const query = event.queryStringParameters || {};
 
 	// 支持从 body 或 query 获取参数
+	const version = body.version || query.version;
 	const action = body.action || query.action;
-	const paperId = body.paperId || query.paperId;
 	const data = body.data || query.data;
 	try {
 		switch (action) {
-			case 'add':
-				return await addTopic(data);
 			case 'addTopics':
 				return await addTopics(data);
-			case 'delete':
-				return await deleteTopic(paperId);
-			case 'deletePaper':
-				return await deleteByPaperId(paperId);
-			case 'update':
-				return await updateTopic(paperId, data);
-			case 'get':
-				return await getTopic(paperId);
 			case 'list':
-				return await listTopics(paperId);
+				return await listTopics(version);
+			case 'deleteAll':
+				return await deleteAll();
 			default:
 				return {
 					code: 400, message: '未识别的操作类型'

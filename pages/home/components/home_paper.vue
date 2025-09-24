@@ -1,5 +1,5 @@
 <template>
-	<view @click="onClick" class="my-3 p-2 rounded-lg bg-white  flex justify-between items-center">
+	<view @click="onClick" class="my-3 p-2 rounded-lg bg-white flex justify-between items-center">
 		<!-- 左侧：标题和介绍 -->
 		<view class="flex-1 overflow-hidden">
 			<view class="text-xl pb-1">{{ title }}</view>
@@ -8,33 +8,33 @@
 
 		<!-- 右侧：图标按钮 -->
 		<view class="pl-2 text-lg">
-			&gt;
+			<uni-icons type="right" size="30"></uni-icons>
 		</view>
 	</view>
 </template>
 
 <script setup>
 import { ref, defineProps, defineEmits } from 'vue';
+
 const emit = defineEmits(['onClick']);
 const props = defineProps({
 	paperId: {
 		type: String,
-		required: true
+		required: true,
 	},
 	title: {
 		type: String,
-		required: true
+		required: true,
 	},
 	description: {
 		type: String,
-		required: true
-	}
+		required: true,
+	},
 });
 
 const onClick = () => {
 	emit('onClick', props.paperId);
 };
-
 </script>
 
 <style scoped>
