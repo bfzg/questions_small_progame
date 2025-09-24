@@ -33,33 +33,32 @@ onLoad((options) => {
 
 function getDataList(retryCount = 3) {
   isLoading.value = true;
-  return uniCloud
-    .callFunction({
-      name: 'function-questions',
+  return uni
+    .request({
+      url: 'https://env-00jxu1ytdn0v.dev-hz.cloudbasefunction.cn/questions',
+      method: 'GET', // 如果是 GET 请求
       data: {
         action: 'list',
-        data: {
-          page: 1,
-          pageSize: 100,
-          pid: pid.value,
-        },
+        paperId: pid.value,
       },
     })
     .then((res) => {
-      const { items, total } = res.result;
-      totalQuestions.value = total;
-      questionItems.value = items;
       isLoading.value = false;
+      if (res.data) {
+        const { items, total } = res.data;
+        totalQuestions.value = total;
+        questionItems.value = items;
+      } else {
+        console.error('请求失败:', res);
+        throw new Error('请求返回异常');
+      }
     })
     .catch((error) => {
       isLoading.value = false;
-      // 检查是否为连接超时错误
-      if (retryCount > 0 && error.message.includes('ConnectTimeoutError')) {
+      if (retryCount > 0 && String(error.message || '').includes('timeout')) {
         console.warn(`请求超时，正在重试... 剩余重试次数: ${retryCount}`);
-        // 延迟 3 秒后重试
         return new Promise((resolve) => setTimeout(resolve, 3000)).then(() => getDataList(retryCount - 1));
       } else {
-        // 如果不是超时错误或重试次数已用尽，则抛出错误
         console.error('请求失败:', error);
         throw error;
       }

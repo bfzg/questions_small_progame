@@ -1,28 +1,20 @@
 'use strict';
 const db = uniCloud.database();
-
+const collection = db.collection('paper');
 exports.main = async (event, context) => {
-	console.log('>>event', event);
-	const page = Number(event.page) || 1;
-	const size = Number(event.size) || 10;
-
 	try {
 		// 获取总数
-		const totalResult = await db.collection('paper').count();
+		const totalResult = await collection.count();
 		const total = totalResult.total;
 
 		// 分页查数据
-		const itemsResult = await db.collection('paper')
-			.skip((page - 1) * size)
-			.limit(size)
-			.get();
+		const itemsResult = await collection.get();
 
 		return {
 			items: itemsResult.data || [],
 			total
 		};
 	} catch (error) {
-		console.error('查询失败：', error);
 		return {
 			items: [],
 			total: 0,

@@ -1,0 +1,65 @@
+{
+  "bsonType": "object",
+  "required": ["id", "title", "option"],
+  "permission": {
+    "read": true,
+    "create": true,
+    "update": true,
+    "delete": true
+  },
+  "properties": {
+    "_id": {
+      "description": "ID，系统自动生成"
+    },
+    "id": {
+      "bsonType": "int",
+      "description": "题目编号"
+    },
+    "title": {
+      "bsonType": "string",
+      "description": "题目标题"
+    },
+	"version": {
+	  "bsonType": "string",
+	  "description": "标准版和简单版"
+	},
+    "option": {
+      "bsonType": "object",
+      "description": "选项对象",
+      "properties": {
+        "a": {
+          "bsonType": "object",
+          "properties": {
+            "title": {
+              "bsonType": "string",
+              "description": "A 选项标题"
+            },
+            "value": {
+              "bsonType": "array",
+              "items": {
+                "bsonType": "string"
+              },
+              "description": "A 选项对应的特性"
+            }
+          }
+        },
+        "b": {
+          "bsonType": "object",
+          "properties": {
+            "title": {
+              "bsonType": "string",
+              "description": "B 选项标题"
+            },
+            "value": {
+              "bsonType": "array",
+              "items": {
+                "bsonType": "string"
+              },
+              "description": "B 选项对应的特性"
+            }
+          }
+        }
+      }
+    }
+  }
+}
